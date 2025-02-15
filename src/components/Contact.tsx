@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, MapIcon as WhatsappIcon } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle as WhatsappIcon } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({

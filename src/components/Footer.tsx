@@ -1,5 +1,7 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, MapIcon as WhatsappIcon } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, MessageCircle as WhatsappIcon } from 'lucide-react';
+
+
 
 export default function Footer() {
   const handleWhatsAppClick = () => {

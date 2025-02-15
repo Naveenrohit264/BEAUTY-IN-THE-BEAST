@@ -1,5 +1,5 @@
-import React from 'react';
-import { ChevronRight, Phone, MapIcon as WhatsappIcon } from 'lucide-react';
+
+import { ChevronRight, MessageCircle as WhatsappIcon } from 'lucide-react';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
