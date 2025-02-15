@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-25"></div>
       
       <div className="relative container mx-auto px-4 py-32 sm:py-48">
         <div className="text-center space-y-8">

@@ -34,7 +34,7 @@ export default function Contact() {
                 </a>
                 <div className="flex items-center gap-3 text-gray-600">
                   <MapPin className="h-5 w-5" />
-                  <span>123 Pet Street, Pawsome City</span>
+                  <span>Secunderabad, Hyderabad, Telangana 500039</span>
                 </div>
               </div>
             </div>
@@ -42,9 +42,9 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Business Hours</h3>
               <div className="space-y-2 text-gray-600">
-                <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
-                <p>Saturday: 10:00 AM - 6:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Monday - Friday: 9:00 AM - 11:00 PM</p>
+                <p>Saturday: 9:00 AM - 11:00 PM</p>
+                <p>Sunday: 9:00 AM - 11:00 PM</p>
               </div>
             </div>
             

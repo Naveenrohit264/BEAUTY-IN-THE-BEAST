@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
               <p className="flex items-center gap-2 text-gray-400">
                 <MapPin className="h-5 w-5" />
-                123 Pet Street, Pawsome City
+              Secunderabad, Hyderabad, Telangana 500039
               </p>
             </div>
           </div>
