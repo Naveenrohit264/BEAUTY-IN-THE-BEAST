@@ -13,22 +13,19 @@ export default function Contact() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    const { name, email, message } = formData;
-    if (!name || !email || !message) {
-      alert("Please fill out all fields before submitting.");
-      return;
-    }
+  e.preventDefault();
 
-    const whatsappMessage = `Hello,
-     I am ${name}.
-     ${email}
-     ${message}`;
-    const whatsappUrl = `https://wa.me/917989169551?text=${encodeURIComponent(whatsappMessage)}`;
-    
-    window.open(whatsappUrl, '_blank');
-  };  
+  const { name, email, message } = formData;
+  if (!name || !email || !message) {
+    alert("Please fill out all fields before submitting.");
+    return;
+  }
+
+  const whatsappMessage = `Hello,\n\nI am *${name}*.\n📧 Email: ${email}\n\n${message}`;
+  const whatsappUrl = `https://wa.me/917989169551?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(whatsappUrl, '_blank');
+};
 
   return (
     <div className="bg-white py-24">
