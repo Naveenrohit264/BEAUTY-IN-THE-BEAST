@@ -5,7 +5,7 @@ import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, MessageCircle as Wha
 
 export default function Footer() {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918247819853', '_blank');
+    window.open('https://wa.me/917989169551', '_blank');
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
             <h4 className="text-xl font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               <a 
-                href="tel:+918247819853"
+                href="tel:+917989169551"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
               >
                 <Phone className="h-5 w-5" />

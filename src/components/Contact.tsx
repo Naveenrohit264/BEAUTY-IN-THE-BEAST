@@ -25,10 +25,10 @@ export default function Contact() {
      I am ${name}.
      ${email}
      ${message}`;
-    const whatsappUrl = `https://wa.me/918247819853?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/917989169551?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappUrl, '_blank');
-  };
+  };  
 
   return (
     <div className="bg-white py-24">
@@ -42,7 +42,7 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
-                <a href="tel:+918247819853" className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
+                <a href="tel:+917989169551" className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
                   <Phone className="h-5 w-5" />
                   <span>+91 824 781 9853</span>
                 </a>
@@ -67,7 +67,7 @@ export default function Contact() {
             </div>
             
             <button
-              onClick={() => window.open('https://wa.me/918247819853', '_blank')}
+              onClick={() => window.open('https://wa.me/917989169551', '_blank')}
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105"
             >
               <WhatsappIcon className="h-5 w-5" />
