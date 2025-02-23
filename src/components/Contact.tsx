@@ -21,7 +21,10 @@ export default function Contact() {
       return;
     }
 
-    const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Message: ${message}`;
+    const whatsappMessage = `Hello,
+     I am ${name}.
+     ${email}
+     ${message}`;
     const whatsappUrl = `https://wa.me/918247819853?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappUrl, '_blank');

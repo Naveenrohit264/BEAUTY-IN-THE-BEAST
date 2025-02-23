@@ -1,11 +1,32 @@
 import React from 'react';
-import { Bath, Scissors, Dog, Baby, Home, Syringe, HeartPulse, GraduationCap } from 'lucide-react';
+import { Bath, Scissors, Dog, Baby, Home, Syringe, HeartPulse, GraduationCap, Sparkles, Brush, Nut as Cut } from 'lucide-react';
+
+const groomingServices = [
+  {
+    icon: Bath,
+    title: 'Luxury Bath',
+    description: 'Indulge your pet in our premium bathing experience featuring organic, hypoallergenic shampoos and conditioners. Each session includes a relaxing massage, thorough cleansing, and aromatherapy treatment to leave your pet feeling refreshed and rejuvenated.',
+    image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80'
+  },
+  {
+    icon: Cut,
+    title: 'Breed Specific Cuts',
+    description: 'Our expert groomers specialize in breed-specific styling techniques, ensuring your pet\'s cut complements their natural features. From show cuts to practical trims, we maintain breed standards while considering your pet\'s lifestyle and your preferences.',
+    image: 'https://media.istockphoto.com/id/1480568295/photo/closeup-of-dog-groomer-performing-haircut-to-shih-tzu-dog-breed.webp?a=1&b=1&s=612x612&w=0&k=20&c=YEwefYgzKO4rHL_Ycwp79Xwd-yRe546S7DKmOFl0JCk='
+  },
+  {
+    icon: Brush,
+    title: 'De-matting & Brushing',
+    description: 'Our thorough brushing and de-matting service helps maintain your pet\'s coat health. We use specialized tools and gentle techniques to remove tangles, prevent matting, and promote healthy fur growth. Includes coat conditioning and skin health check.',
+    image: 'https://images.unsplash.com/photo-1558929996-da64ba858215?auto=format&fit=crop&q=80'
+  }
+];
 
 const services = [
   {
     icon: Bath,
     title: 'Premium Grooming',
-    description: 'Professional bathing, styling, and spa treatments for all breeds',
+   
     image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80',
@@ -16,7 +37,7 @@ const services = [
   {
     icon: Dog,
     title: 'Pet Adoption',
-    description: 'Find your perfect companion from our selection of healthy, happy pets',
+   
     image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80',
@@ -27,7 +48,7 @@ const services = [
   {
     icon: GraduationCap,
     title: 'Professional Training',
-    description: 'Expert training sessions for better behavior and happy pets',
+    
     image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80',
@@ -38,7 +59,7 @@ const services = [
   {
     icon: HeartPulse,
     title: 'Luxury Boarding',
-    description: "Comfortable stays for your pets with 24/7 care and attention",
+
     image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80',
@@ -49,8 +70,7 @@ const services = [
   {
     icon: Syringe,
     title: 'Healthcare',
-    description: 'Complete healthcare services including vaccinations and check-ups',
-    image: 'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&q=80',
+    image: 'https://media.istockphoto.com/id/885571364/photo/young-french-bulldog-on-the-visit-to-the-vet.webp?a=1&b=1&s=612x612&w=0&k=20&c=DGDFrlO0tZdrkIlF1AU82SxYs_7VXhCj8E8RvmufeLU=',
     gallery: [
       'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80',
@@ -60,7 +80,7 @@ const services = [
   {
     icon: Home,
     title: 'Home Services',
-    description: 'Professional grooming and care services at your doorstep',
+    
     image: 'https://images.unsplash.com/photo-1585071550721-fdb362ae2b8d?auto=format&fit=crop&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1585071550721-fdb362ae2b8d?auto=format&fit=crop&q=80',
@@ -76,8 +96,40 @@ export default function Services() {
   return (
     <div className="bg-white py-24">
       <div className="container mx-auto px-4">
+        {/* Featured Grooming Section */}
+        <div className="mb-24">
+          <div className="flex items-center justify-center gap-2 mb-16">
+            <Sparkles className="h-8 w-8 text-purple-600" />
+            <h2 className="text-4xl font-bold text-center">
+              Featured <span className="text-purple-600">Grooming Services</span>
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {groomingServices.map((service, index) => (
+              <div 
+                key={index}
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-purple-500/30 z-10 group-hover:from-purple-900/80 group-hover:to-purple-500/40 transition-all duration-300"></div>
+                <img 
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-20">
+                  <service.icon className="h-8 w-8 mb-3" />
+                  <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                  <p className="text-gray-100 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Other Services Section */}
         <h2 className="text-4xl font-bold text-center mb-16">
-          Our <span className="text-purple-600">Services</span>
+          Other <span className="text-purple-600">Services</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

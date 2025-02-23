@@ -34,10 +34,7 @@ export default function Hero() {
               Contact on WhatsApp
               <WhatsappIcon className="h-5 w-5" />
             </button>
-            <button className="flex items-center gap-2 bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-all transform hover:scale-105">
-              Book Appointment
-              <ChevronRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+         
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">

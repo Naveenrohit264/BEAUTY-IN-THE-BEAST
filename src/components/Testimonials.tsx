@@ -3,21 +3,21 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'David',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80',
     text: 'The grooming service was exceptional! My dog looks and smells amazing. The staff was so gentle and professional.',
     rating: 5,
     pet: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80'
   },
   {
-    name: 'Michael Chen',
+    name: 'Michael',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80',
     text: 'Best pet training services in town! Our puppy learned so much in just a few sessions.',
     rating: 5,
     pet: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80'
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'Rohit',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80',
     text: 'The boarding facility is amazing! My cats were so well taken care of during our vacation.',
     rating: 5,
@@ -40,11 +40,7 @@ export default function Testimonials() {
               className="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
+               
                 <div>
                   <h3 className="font-semibold text-lg">{testimonial.name}</h3>
                   <div className="flex gap-1">
