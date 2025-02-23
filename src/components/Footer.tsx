@@ -32,7 +32,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
               >
                 <Phone className="h-5 w-5" />
-                +91 824 781 9853
+                +91 7989169551
               </a>
               <a 
                 href="mailto:info@beautyinthebeast.com"
