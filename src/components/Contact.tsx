@@ -44,7 +44,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <a href="tel:+917989169551" className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
                   <Phone className="h-5 w-5" />
-                  <span>+91 824 781 9853</span>
+                  <span>+91 7989169551</span>
                 </a>
                 <a href="mailto:info@beautyinthebeast.com" className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition-colors">
                   <Mail className="h-5 w-5" />
